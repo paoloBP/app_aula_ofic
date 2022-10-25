@@ -40,6 +40,14 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/sobre');
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('Informações'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/informacoes');
+              },
+            ),
           ],
         ),
       ),
