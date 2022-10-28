@@ -18,19 +18,19 @@ class _IMCPageState extends State<IMCPage> {
   void _calcular() {
     setState(() {
       _imc = _peso / (_altura * _altura);
-
+      _imc = double.parse(_imc.toStringAsFixed(2));
       if (_imc < 18.5) {
-        _nome = '$_nome' ' - ' 'Abaixo do peso';
+        _nome = '$_nome' ' - ' ' ' 'Abaixo do peso';
       } else if (_imc >= 18.5 && _imc < 25) {
-        _nome = '$_nome' ' - ' 'Peso normal';
+        _nome = '$_nome' ' - ' '' 'Peso normal';
       } else if (_imc >= 25 && _imc < 30) {
-        _nome = '$_nome' ' - ' 'Sobrepeso';
+        _nome = '$_nome' ' - ' '' 'Sobrepeso';
       } else if (_imc >= 30 && _imc < 35) {
-        _nome = '$_nome' ' - ' 'Obesidade grau 1';
+        _nome = '$_nome' ' - ' '' 'Obesidade grau 1';
       } else if (_imc >= 35 && _imc < 40) {
-        _nome = '$_nome' ' - ' 'Obesidade grau 2';
+        _nome = '$_nome' ' - ' '' 'Obesidade grau 2';
       } else if (_imc >= 40) {
-        _nome = '$_nome' ' - ' 'Obesidade grau 3';
+        _nome = '$_nome' ' - ' '' 'Obesidade grau 3';
       }
     });
   }
