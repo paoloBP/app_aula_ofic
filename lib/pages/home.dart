@@ -48,6 +48,30 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/informacoes');
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('Formulario'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/formulario');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('Dialogos'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/dialogos');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('IMC'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/imc');
+              },
+            ),
           ],
         ),
       ),
