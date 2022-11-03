@@ -42,6 +42,14 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.info),
+              title: const Text('Dias'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/dias_vividos');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.info),
               title: const Text('Informações'),
               onTap: () {
                 Navigator.pop(context); // close the drawer

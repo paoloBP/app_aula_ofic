@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/contador': (context) => const ContadorPage(title: "Contador"),
         '/sobre': (context) => SobrePage(),
         '/informacoes': (context) => InformacoesPage(),
+        '/dias_vividos': (context) => DiasVividosPage(),
         '/formulario': (context) => FormValidacaoPage(),
         '/dialogos': (context) => DiasVividosPage(),
         '/imc': (context) => IMCPage(),
