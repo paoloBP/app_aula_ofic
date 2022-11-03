@@ -3,7 +3,7 @@ import 'package:app_aula_ofic/pages/home.dart';
 import 'package:app_aula_ofic/pages/informacoes.dart';
 import 'package:app_aula_ofic/pages/sobre.dart';
 import 'package:app_aula_ofic/pages/formulario.dart';
-import 'package:app_aula_ofic/pages/dias.dart';
+import 'package:app_aula_ofic/pages/dias_vividos.dart';
 import 'package:app_aula_ofic/pages/imc.dart';
 import 'package:flutter/material.dart';
 
@@ -25,9 +25,9 @@ class MyApp extends StatelessWidget {
         '/contador': (context) => const ContadorPage(title: "Contador"),
         '/sobre': (context) => SobrePage(),
         '/informacoes': (context) => InformacoesPage(),
-        '/dias_vividos': (context) => DiasVividosPage(),
+        '/diasVividos': (context) =>
+            const DiasVividosPage(title: "Dias Vividos"),
         '/formulario': (context) => FormValidacaoPage(),
-        '/dialogos': (context) => DiasVividosPage(),
         '/imc': (context) => IMCPage(),
       },
     );

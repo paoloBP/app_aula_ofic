@@ -41,11 +41,11 @@ class HomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              leading: const Icon(Icons.info),
-              title: const Text('Dias'),
+              leading: const Icon(Icons.person_pin_outlined),
+              title: const Text('Dias Vividos'),
               onTap: () {
-                Navigator.pop(context); // close the drawer
-                Navigator.of(context).pushNamed('/dias_vividos');
+                Navigator.pop(context);
+                Navigator.of(context).pushNamed('/diasVividos');
               },
             ),
             ListTile(
