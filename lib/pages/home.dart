@@ -48,6 +48,14 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/diasVividos');
               },
             ),
+             ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('diasvividos Oo'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/diasVividosOo');
+              },
+            ),
             ListTile(
               leading: const Icon(Icons.info),
               title: const Text('Informações'),
@@ -79,6 +87,7 @@ class HomePage extends StatelessWidget {
                 Navigator.pop(context); // close the drawer
                 Navigator.of(context).pushNamed('/imc');
               },
+              
             ),
           ],
         ),
