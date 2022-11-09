@@ -48,7 +48,7 @@ class HomePage extends StatelessWidget {
                 Navigator.of(context).pushNamed('/diasVividos');
               },
             ),
-             ListTile(
+            ListTile(
               leading: const Icon(Icons.info),
               title: const Text('diasvividos Oo'),
               onTap: () {
@@ -74,20 +74,19 @@ class HomePage extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.info),
-              title: const Text('Dialogos'),
-              onTap: () {
-                Navigator.pop(context); // close the drawer
-                Navigator.of(context).pushNamed('/dialogos');
-              },
-            ),
-            ListTile(
-              leading: const Icon(Icons.info),
               title: const Text('IMC'),
               onTap: () {
                 Navigator.pop(context); // close the drawer
                 Navigator.of(context).pushNamed('/imc');
               },
-              
+            ),
+            ListTile(
+              leading: const Icon(Icons.info),
+              title: const Text('IMC Oo'),
+              onTap: () {
+                Navigator.pop(context); // close the drawer
+                Navigator.of(context).pushNamed('/imcOo');
+              },
             ),
           ],
         ),

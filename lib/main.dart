@@ -5,7 +5,7 @@ import 'package:app_aula_ofic/pages/sobre.dart';
 import 'package:app_aula_ofic/pages/formulario.dart';
 import 'package:app_aula_ofic/pages/dias_vividos.dart';
 import 'package:app_aula_ofic/pages/dias_vividos _oo.dart';
-import 'package:app_aula_ofic/pages/imc.dart';
+import 'package:app_aula_ofic/pages/imc_oo.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,11 +28,10 @@ class MyApp extends StatelessWidget {
         '/informacoes': (context) => InformacoesPage(),
         '/diasVividos': (context) =>
             const DiasVividosPage(title: "Dias Vividos Oo"),
-            '/diasVividosOo': (context) =>
+        '/diasVividosOo': (context) =>
             const DiasVividosOoPage(title: "Dias VividosOo"),
+        '/imcOo': (context) => const ImcOoPage(title: "IMC Oo"),
         '/formulario': (context) => FormValidacaoPage(),
-        '/imc': (context) => IMCPage(),
-        
       },
     );
   }
